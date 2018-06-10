@@ -1,0 +1,183 @@
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image: url(blury.jpg);
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 3vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat (9, 1fr);
+    grid-template-areas: "c1 c2 c3" "c4 c5 c6" "c7 c8 c9" "c10 c11 c12" "c13 c14 c15" "c16 c17 c18" "c19 c20 c20";
+    margin: 5vw;
+}
+
+.c1 {
+    grid-area: c1;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: black;
+}
+
+<div class="container" > <img src="1.jpg" alt="1" style="width:100%" > <button class="btn" > Button</button > </div > .c2 {
+    grid-area: c2;
+}
+
+
+.c3 {
+    grid-area: c3;
+}
+
+.c4 {
+    grid-area: c4;
+}
+
+.c5 {
+    grid-area: c5;
+}
+
+.c6 {
+    grid-area: c6;
+}
+
+h1,
+h2,
+h3 {
+
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    height: auto;
+    width: 70%;
+
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+
+    }
+    .grid {
+        display: grid;
+        grid-gap: 3vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (9, 1fr);
+        grid-template-areas: "c1" "c2" "c3" "c4" "c5" "c6" "c7" "c8" "c9" "c10" "c11" "c12" "c13" "c14" "c15" "c16" "c17" "c18" "c19" "c20" "c20";
+        margin: 5vw;
+    }
+}
+@media screen and (min-width: 601px) {
+  .text-block {
+    font-size: 20px;
+      }
+    }
+
+@media screen and (max-width: 200px) {
+  .text-block {
+    font-size: 5px;
+  }
+}

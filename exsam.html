@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="exsam.css" type="text/css">
+
+</head>
+
+<body>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="exsam.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="profile.html">Profile</a>
+    </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+    <div>
+        <h1>Diana J Design Portfolio</h1>
+
+        <p> This is my KEA MMD'18 portfolio exam website.</p>
+        <p> Here you are able to see my projects from 1st semester, and also some information about me.</p>
+        <p>Enjoy!</p>
+    </div>
+
+
+</body>
+
+
+
+<!JAVA START---->
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+
+</script>
